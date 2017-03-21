@@ -6,3 +6,8 @@ services:
         container_name: stanbol
         ports:
             - 9988:8080
+        environment:
+              - VIRTUAL_HOST=stanbol.sobol.nr
+        network_mode: "bridge"
+
+
